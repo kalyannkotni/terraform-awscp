@@ -4,7 +4,7 @@ resource "aws_instance" "my-ec2-vm" {
   ami = "${var.ami}" # Amazon Linux
   instance_type = "${var.instanceType}"
   subnet_id = aws_subnet.vpc-dev-public-subnet-1.id
-  key_name = "pemkey"
+  key_name = "practise"
   user_data = "${file("apache-install.sh")}"
   vpc_security_group_ids = [ aws_security_group.dev-vpc-sg.id ]
   tags = {
