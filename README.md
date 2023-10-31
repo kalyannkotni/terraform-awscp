@@ -1,1 +1,1 @@
-terraform with aws codepipeline
+Deploy a vm terraform with aws codepipeline
