@@ -16,3 +16,6 @@ provider "aws" {
   profile = "default"
 }
 
+resource "random_pet" "this" {
+  length = 2
+}
